@@ -18,7 +18,6 @@ export const SearchWeather = () => {
             alert("Please provide a city name");
         }
         axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=${apiKey}&units=metric`).then((res) => {
-            console.log(res.data);
             setTemp(res.data.main.temp);
             setDesc(res.data.weather[0].description);
             setFeelsLike(res.data.main.feels_like);
