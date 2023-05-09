@@ -1,12 +1,10 @@
-
-
+import { SearchWeather } from './Components/Search-weather';
 import './App.css'
 
 function App() {
   return (
     <div className='App'>
-      <h1>Oscar Anillo</h1>
-      <p>Fullstack Developer</p>
+      <SearchWeather />
     </div>
   )
 }
